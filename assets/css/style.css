@@ -134,6 +134,7 @@ html {
   font-size: 22px;
   color: #fff;
   font-weight: 600;
+  font-family: "DM Sans";
 }
 .profile--nav {
   background-color: #151728;
@@ -580,6 +581,10 @@ html {
   color: #ccc8db;
   margin-bottom: 3px;
   cursor: pointer;
+  font-weight: 500;
+}
+.user-content--name:hover{
+  color: #fff;
 }
 .user-content--date{
   font-family: "Source Sans Pro";
@@ -606,6 +611,10 @@ html {
   color: #ccc8db;
   margin-bottom: 0;
   cursor: pointer;
+  font-weight: 500;
+}
+.contacts .user-content--name:hover{
+  color: #fff;
 }
 .user-content--status{
   background-color: #7fd222;
