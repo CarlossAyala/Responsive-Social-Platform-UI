@@ -495,6 +495,7 @@ html {
 .right-side {
   background-color: #151728;
   width: 300px;
+  overflow: auto;
 }
 .account {
   display: flex;
@@ -550,6 +551,9 @@ html {
 .stories .side-content {
   border-bottom: 1px solid #272a3a;
 }
+.stories-content{
+  padding-top: 10px;
+}
 .stories-content--user {
   margin-bottom: 15px;
   display: flex;
@@ -580,7 +584,38 @@ html {
   font-size: 15px;
   color: #595c6c;
 }
-
+.contacts-container{
+  padding-top: 10px;
+}
+.contact-content--user{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.contacts-container .user-content--img{
+  border: none;
+}
+.contacts .user-content--name {
+  font-size: 15px;
+  font-family: "DM Sans";
+  color: #ccc8db;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.user-content--status{
+  background-color: #7fd222;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: auto;
+  cursor: pointer;
+}
+.offline{
+  background-color: #606a8d;
+}
+.idle{
+  background-color: #dd1c20;
+}
 
 /*
   Para entender las partes del Scroll 
