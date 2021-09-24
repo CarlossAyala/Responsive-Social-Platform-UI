@@ -1,6 +1,6 @@
 # Responsive-Social-Platform-UI
 
-_Mi primer proyecto maquedando una página web, usando solo HTML y CSS_
+Mi primer proyecto maquedando una página web, usando solo HTML y CSS
 
 ## Obersaviones
 * **HTML**: Uso de muchos _**divs**_ y elegir nombres para las clases es una tarea dificil.
@@ -15,7 +15,7 @@ Puedes mirar el resultado final de este proyecto [**aquí**](https://responsive-
 
 Hice deploy en [**Netlify**](https://www.netlify.com/) porque me es fácil de usar, rápido y gratis.
 
-## Recursos 🛠️
+## Recursos
 
 Utilizé los siguientes recursos para armar este proyecto:
 * [**Iconos**](https://feathericons.com/)
