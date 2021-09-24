@@ -56,7 +56,7 @@ html {
   width: 16px;
   padding-right: 7px;
 }
-.side-content:last-child {
+.left-side .side-content:last-child {
   border-top: 1px solid #272a3a;
 }
 /*#9c9cab*/
@@ -65,16 +65,19 @@ html {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 .search-bar {
   background-color: #151728;
   display: flex;
   align-items: center;
-  height: 50px;
-  padding: 0px 30px;
+  padding: 15px;
 }
 .search-bar svg {
   margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 .search-bar input {
   background-color: transparent;
@@ -82,13 +85,13 @@ html {
   color: #fff;
   outline: none;
   font-weight: 600;
+  font-size: 18px
 }
 .search-bar input::placeholder {
   color: #5c5d71;
 }
 .main-container {
   padding: 15px;
-  overflow: auto;
   background-color: #24273b;
 }
 .profile {
@@ -504,16 +507,16 @@ html {
   align-items: center;
 }
 .activity-message,
-.activity-notify{
+.activity-notify {
   cursor: pointer;
   color: #64677a;
   width: 20px;
   height: 20px;
 }
-.activity-message{
+.activity-message {
   margin-right: 15px;
 }
-.account-activity svg:hover{
+.account-activity svg:hover {
   color: #fff;
 }
 .account-profile {
@@ -524,10 +527,10 @@ html {
   color: #64677a;
   font-weight: 600;
   font-size: 17px;
-  margin-right: 5px;
+  margin-right: 10px;
   cursor: pointer;
 }
-.account-profile--user:hover{
+.account-profile--user:hover {
   color: #fff;
 }
 .account-profile--img {
@@ -541,8 +544,41 @@ html {
   width: 26px;
   cursor: pointer;
 }
-.account-profile--svg:hover{
+.account-profile--svg:hover {
   color: #fff;
+}
+.stories .side-content {
+  border-bottom: 1px solid #272a3a;
+}
+.stories-content--user {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.user-content--img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #e2b96c;
+  margin-right: 10px;
+}
+.user-container--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-content--name{
+  font-size: 15px;
+  font-family: "DM Sans";
+  color: #ccc8db;
+  margin-bottom: 3px;
+}
+.user-content--date{
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  color: #595c6c;
 }
 
 
