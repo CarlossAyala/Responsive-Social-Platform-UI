@@ -548,7 +548,7 @@ html {
 .account-profile--svg:hover {
   color: #fff;
 }
-.stories .side-content {
+.stories .side-content:first-child {
   border-bottom: 1px solid #272a3a;
 }
 .stories-content{
@@ -567,6 +567,7 @@ html {
   object-position: center;
   border: 2px solid #e2b96c;
   margin-right: 10px;
+  cursor: pointer;
 }
 .user-container--info {
   display: flex;
@@ -578,6 +579,7 @@ html {
   font-family: "DM Sans";
   color: #ccc8db;
   margin-bottom: 3px;
+  cursor: pointer;
 }
 .user-content--date{
   font-family: "Source Sans Pro";
@@ -591,6 +593,9 @@ html {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+}
+.contact-content--user:last-child{
+  margin-bottom: 0;
 }
 .contacts-container .user-content--img{
   border: none;
@@ -616,7 +621,43 @@ html {
 .idle{
   background-color: #dd1c20;
 }
-
+.search-contact{
+  border-top: 1px solid #272a3a;
+  color: #64677a;
+  display: flex;
+  padding: 10px 13px;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0;
+  margin-top: auto;
+  background-color: #151728;
+}
+.search-contact--container{
+  display: inline-flex;
+  align-items: center;
+}
+.search-contact--container svg{
+  margin-right: 5px;
+}
+.search-contact svg{
+  width: 20px;
+  height: 20px;
+}
+.search-contact svg:hover{
+  color: #fff;
+}
+.search-contact--text{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-weight: 600;
+  display: inline-flex;
+  width: 150px;
+}
+.search-contact--text::placeholder {
+  color: #5c5d71;
+}
 /*
   Para entender las partes del Scroll 
   https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css
