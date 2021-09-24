@@ -24,11 +24,6 @@ Utilizé los siguientes recursos para armar este proyecto:
 
 ## Créditos
 
-El diseño de la página web es trabajo de **Aysenur**. Dejo sus redes a continuación:
-
-* [**Twitter**](https://twitter.com/AysnrTrkk)
-* [**CodeOpen.Io**](https://codepen.io/TurkAysenur)
-
 A Pen created on CodePen.io. Original URL: [https://codepen.io/TurkAysenur/pen/RwWKYMO](https://codepen.io/TurkAysenur/pen/RwWKYMO).
 
 Inspired By Quan Ha
