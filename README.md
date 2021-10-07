@@ -5,7 +5,7 @@ Mi primer proyecto maquedando una página web, usando solo HTML y CSS
 ## Obersaviones
 * **HTML**: Uso de muchos _**divs**_ y elegir nombres para las clases es una tarea dificil.
 * **CSS**: Intenté implementar _**::before**_ y _**::after**_ ... no salió muy bien, hice algo pequeño con _**Transform**_ muy buena herramienta. Usé solo **FlexBox**.
-* Es importante tomarse el debido tiempo para definir bien las partes de la página web, para al momento de hacer el código _HTML y CSS_ para ahorrarnos mucho código repetido.
+* Es importante tomarse el debido tiempo para definir bien las partes de la página web, para al momento de hacer el código _HTML y CSS_ ,ahorrarnos mucho código repetido.
 
 ## Demo
 
