@@ -15,6 +15,41 @@ html {
 .left-side {
   width: 260px;
   overflow: auto;
+  flex-shrink: 0;
+}
+.left-side-button,
+.right-side-button {
+  display: none;
+}
+@media only screen and (max-width: 930px) {
+  .left-side-button,
+  .right-side-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(39, 42, 58, 0.5);
+    padding: 10px 0;
+  }
+  .left-side .active,
+  .right-side .active{
+    z-index: 4;
+  }
+  .left-side .active > *:not(.logo),
+  .right-side .active > *:not(.logo){
+    opacity: 1;
+  }
+  .left-side:not(.active),
+  .right-side:not(.active){
+    width: 45px;
+    overflow: hidden;
+  }
+  .left-side:not(.active) > *:not(.left-side-button),
+  .right-side:not(.active) > *:not(.right-side-button){
+    opacity: 0;
+  }
+}
+#btn{
+  cursor: pointer;
 }
 .logo {
   letter-spacing: 4px;
@@ -140,11 +175,17 @@ html {
   background-color: #151728;
   display: flex;
   justify-content: center;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .profile--nav__item {
-  padding: 20px 16px;
+  padding: 20px 10px;
+  margin-right: 15px;
   color: #5c5e6e;
   text-decoration: none;
+}
+.profile--nav__item:last-child {
+  margin-right: 0;
 }
 .profile--nav__item:hover {
   cursor: pointer;
@@ -497,6 +538,7 @@ html {
   background-color: #151728;
   width: 300px;
   overflow: auto;
+  flex-shrink: 0;
 }
 .account {
   display: flex;
@@ -667,6 +709,60 @@ html {
 .search-contact--text::placeholder {
   color: #5c5d71;
 }
+@media only screen and (max-width: 930px) {
+  /*  MAIN  */
+  .profile--photo{
+    top: -25px;
+    left: 50%;
+    transform: translatex(-50%);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile--photo img {
+    height: 100px;
+    width: 100px
+  }
+  .profile--photo span{
+    margin: 10px 0;
+  }
+  .profile--nav{
+    width: 100%;
+    overflow: auto;
+  }
+  .timeline{
+    flex-wrap: wrap;
+  }
+  .timeline-left{
+    margin-right: 0;
+    width: 100%;
+  }
+  .timeline-right{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .timeline-status{
+    font-size: 14px;
+  }
+  .status-header{
+    justify-content: center;
+    padding: 15px 0;
+  }
+  .status-header a{
+    margin-right: 0;
+  }
+  .timeline-publication{
+    width: 100%;
+  }
+  .profile--nav{
+    justify-content: start;
+    overflow: auto;
+  }
+  
+}
+
+
+
 /*
   Para entender las partes del Scroll 
   https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css
